@@ -1,2 +1,6 @@
 # Even-Odd-Game
-Simple Arduino game
+This code is for a game called the "even odd game". The game is played between a user and a computer.
+    The game starts by prompting the user to enter a number between 1 and 5. If the user enters a number outside of that range, the game restarts. If the input is valid, the program prompts the user to choose "even" or "odd" by typing it into the serial monitor. The input is not case-sensitive, so the user can enter "even" or "EVEN" or "odD" or "ODD" and it will be treated the same.
+    After the user has entered their choice, the program generates a random number between 1 and 5. It then adds the user's number and the random number together to get a sum. If the sum is even and the user chose "even" or if the sum is odd and the user chose "odd", then the user wins. If not, the user loses.
+    The program will display whether the user won or lost, and will turn on either a green or red LED depending on the outcome. The program also moves a servo motor to point at the LED that is turned on, so that the user can see which color corresponds to winning and which corresponds to losing.
+    Finally, the program waits for 5 seconds before restarting the game and prompting the user to enter a new number between 1 and 5 to start a new round of the game.
